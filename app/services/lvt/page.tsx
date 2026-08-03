@@ -122,8 +122,8 @@ export default function LVTPage() {
         eyebrow="Best Rooms"
         title="Where LVT"
         italicTitle="Performs Best"
-        image="/images/lvt-bathroom.jpg"
-        alt="Waterproof LVT flooring fitted in a modern bathroom with wood-look finish"
+        image="/images/lvt-showroom-samples.png"
+        alt="A range of LVT sample boards in wood-look and stone-look finishes on display in our showroom"
       >
         <p>
           LVT comes into its own in kitchens, bathrooms, hallways and utility
@@ -143,8 +143,8 @@ export default function LVTPage() {
         eyebrow="Waterproofing"
         title="Fully Waterproof,"
         italicTitle="Fully Practical"
-        image="/images/lvt-bathroom-2.jpg"
-        alt="Close view of waterproof LVT flooring seams and finish in a bathroom setting"
+        image="/images/lvt-showroom-samples.png"
+        alt="Close-up of LVT sample boards showing realistic wood grain and stone finishes"
         reverse
       >
         <p>

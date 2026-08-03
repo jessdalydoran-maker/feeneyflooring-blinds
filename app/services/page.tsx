@@ -30,7 +30,7 @@ const services = [
   {
     name: "LVT",
     href: "/services/lvt",
-    image: "/images/lvt-bathroom.jpg",
+    image: "/images/lvt-showroom-samples.png",
     body: "Waterproof luxury vinyl tile for kitchens, bathrooms and busy family homes, in stone and wood-look finishes.",
   },
   {

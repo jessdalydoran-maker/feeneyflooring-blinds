@@ -142,8 +142,8 @@ export default function FlooringHubPage() {
         eyebrow="LVT"
         title="Waterproof"
         italicTitle="Luxury Vinyl"
-        image="/images/lvt-bathroom.jpg"
-        alt="Waterproof LVT luxury vinyl tile flooring fitted in a bathroom"
+        image="/images/lvt-showroom-samples.png"
+        alt="A range of waterproof LVT luxury vinyl tile samples on display in our showroom"
         reverse
         cta={{ label: "Explore LVT", href: "/services/lvt" }}
       >

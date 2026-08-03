@@ -126,8 +126,8 @@ export default function CarpetPage() {
         eyebrow="Underlay"
         title="Why Underlay"
         italicTitle="Matters"
-        image="/images/carpet-natural.jpg"
-        alt="Natural tone carpet fitted with quality underlay for comfort and insulation"
+        image="/images/carpet-bedroom-close-up.png"
+        alt="Close-up of soft, plush carpet fitted with quality underlay in a bedroom"
         reverse
       >
         <p>

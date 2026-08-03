@@ -98,7 +98,7 @@ export const blogPosts: BlogPost[] = [
     category: "Buying Guides",
     excerpt:
       "Two of the most popular flooring choices in Northern Ireland, head to head — waterproofing, durability, underfloor heating, cost, and which rooms suit each.",
-    image: "/images/lvt-bathroom.jpg",
+    image: "/images/lvt-showroom-samples.png",
     datePublished: "2026-06-03",
     metaDescription:
       "LVT vs laminate flooring compared for Northern Ireland homes — waterproofing, durability, cost, underfloor heating compatibility and room-by-room recommendations from Feeney Flooring.",
