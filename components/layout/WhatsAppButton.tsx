@@ -2,9 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { BUSINESS } from "@/lib/constants";
+import { useCookieBannerVisible } from "@/lib/useCookieBannerVisible";
 
 export function WhatsAppButton() {
   const [visible, setVisible] = useState(false);
+  const bannerVisible = useCookieBannerVisible();
 
   useEffect(() => {
     const timer = setTimeout(() => setVisible(true), 2000);
@@ -18,7 +20,7 @@ export function WhatsAppButton() {
       rel="noopener noreferrer"
       aria-label="Chat with us on WhatsApp"
       className={`fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] shadow-lg transition-opacity duration-700 ${
-        visible ? "opacity-100" : "pointer-events-none opacity-0"
+        visible && !bannerVisible ? "opacity-100" : "pointer-events-none opacity-0"
       }`}
     >
       <svg viewBox="0 0 32 32" className="h-7 w-7 fill-white">
