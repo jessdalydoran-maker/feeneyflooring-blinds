@@ -149,7 +149,7 @@ export default function AboutPage() {
           <ScrollReveal>
             <div className="relative aspect-[4/3] overflow-hidden border border-gold-border rounded-[2px]">
               <Image
-                src="/images/showroom-1.jpg"
+                src="/images/showroom-main.png"
                 alt="Feeney Flooring & Blinds showroom in Crumlin with flooring and carpet samples on display"
                 fill
                 className="object-cover"

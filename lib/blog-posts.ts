@@ -178,7 +178,7 @@ export const blogPosts: BlogPost[] = [
     category: "Lifestyle",
     excerpt:
       "Muddy paws, claws and the odd accident — here's how to choose flooring that actually stands up to life with dogs and cats, without compromising on how your home looks.",
-    image: "/images/engineered-wood-kitchen.jpg",
+    image: "/images/wood-floor-kitchen.png",
     datePublished: "2026-06-24",
     metaDescription:
       "The best flooring options for homes with pets in Northern Ireland — scratch resistance, waterproofing and cleaning ease compared across LVT, laminate, wood and carpet.",
@@ -350,7 +350,7 @@ export const blogPosts: BlogPost[] = [
     category: "Technical Guides",
     excerpt:
       "TOG ratings, moisture, compatible floor types and installation pitfalls — a technical, honest guide to choosing flooring for underfloor heating.",
-    image: "/images/flooring-samples.jpg",
+    image: "/images/flooring-samples-display.png",
     datePublished: "2026-07-27",
     metaDescription:
       "Which flooring works best over underfloor heating in Northern Ireland homes — TOG ratings explained, compatible floor types, installation considerations and product recommendations.",

@@ -121,7 +121,14 @@ export default function StairFittingPage() {
         </p>
       </ContentSection>
 
-      <ContentSection eyebrow="Style Options" title="Runner vs" italicTitle="Fully Fitted">
+      <ImageContentSection
+        eyebrow="Style Options"
+        title="Runner vs"
+        italicTitle="Fully Fitted"
+        image="/images/stair-runner-herringbone-hallway.png"
+        alt="Beige stair carpet runner on an oak staircase, with grey herringbone flooring in the hallway below"
+        reverse
+      >
         <p>
           A fully fitted stair carpet covers the entire width of each tread
           edge to edge, giving a complete, uniform look that suits most
@@ -144,7 +151,7 @@ export default function StairFittingPage() {
           talk through both options honestly during the free measure, using
           photos of previous work to help you picture the finished result.
         </p>
-      </ContentSection>
+      </ImageContentSection>
 
       <ContentSection eyebrow="Safety" title="Getting the Safety" italicTitle="Details Right">
         <p>

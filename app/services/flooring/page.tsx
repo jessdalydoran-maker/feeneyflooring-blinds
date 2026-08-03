@@ -165,7 +165,7 @@ export default function FlooringHubPage() {
         eyebrow="Laminate"
         title="Durable &"
         italicTitle="Affordable"
-        image="/images/flooring-samples.jpg"
+        image="/images/flooring-samples-display.png"
         alt="Laminate flooring sample boards showing realistic wood grain photographic finish"
         cta={{ label: "Explore Laminate", href: "/services/laminate" }}
       >

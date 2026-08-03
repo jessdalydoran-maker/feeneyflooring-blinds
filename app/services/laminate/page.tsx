@@ -120,8 +120,8 @@ export default function LaminatePage() {
         eyebrow="Best Rooms"
         title="Where Laminate"
         italicTitle="Works Best"
-        image="/images/flooring-samples.jpg"
-        alt="Laminate flooring sample boards in a range of realistic wood-look finishes"
+        image="/images/flooring-samples-display.png"
+        alt="Laminate flooring sample boards and swatches in a range of realistic wood-look finishes"
       >
         <p>
           Laminate performs best in living rooms, bedrooms, hallways and
@@ -142,8 +142,8 @@ export default function LaminatePage() {
         eyebrow="Installation"
         title="Floating Floor"
         italicTitle="Fitting"
-        image="/images/engineered-wood-kitchen-close.jpg"
-        alt="Close-up view of laminate flooring plank joints and finish detail"
+        image="/images/wood-floor-kitchen.png"
+        alt="Wide-plank wood-look flooring showing realistic plank joints and finish detail"
         reverse
       >
         <p>

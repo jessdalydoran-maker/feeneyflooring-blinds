@@ -18,7 +18,7 @@ const services = [
   {
     name: "Flooring",
     href: "/services/flooring",
-    image: "/images/flooring-collection.jpg",
+    image: "/images/flooring-showroom-display.png",
     body: "Engineered wood, LVT, laminate, carpet and stair fitting — supplied and fitted across every room in the house.",
   },
   {
@@ -36,7 +36,7 @@ const services = [
   {
     name: "Laminate",
     href: "/services/laminate",
-    image: "/images/engineered-wood-kitchen.jpg",
+    image: "/images/wood-floor-kitchen-island.png",
     body: "Durable, affordable, easy-clean flooring that stands up to family life without breaking the budget.",
   },
   {
