@@ -101,14 +101,14 @@ export default function ServicesPage() {
             <RevealItem key={service.href}>
               <Link
                 href={service.href}
-                className="group block h-full overflow-hidden border border-gold-border bg-panel rounded-[2px] transition-colors hover:border-gold"
+                className="group block h-full overflow-hidden rounded-3xl border border-gold-border bg-panel transition-colors hover:border-gold"
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
                     src={service.image}
                     alt={`${service.name} supplied and fitted by Feeney Flooring & Blinds in Crumlin`}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                     sizes="(min-width: 1024px) 33vw, 100vw"
                   />
                 </div>

@@ -63,7 +63,7 @@ export default function ContactPage() {
                 ))}
             </div>
 
-            <div className="mt-8 aspect-video overflow-hidden border border-gold-border rounded-[2px]">
+            <div className="mt-8 aspect-video overflow-hidden rounded-3xl border border-gold-border">
               <iframe
                 title="Feeney Flooring & Blinds showroom location"
                 src="https://www.google.com/maps?q=32-34+Main+Street,+Crumlin,+BT29+4UP&output=embed"

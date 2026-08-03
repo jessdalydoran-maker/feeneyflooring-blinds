@@ -1,8 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
 import { Eyebrow } from "@/components/ui/Badge";
 import { ScrollReveal } from "@/components/animations/ScrollReveal";
+import { AnimatedImage } from "@/components/animations/AnimatedImage";
 
 export function ContentSection({
   eyebrow,
@@ -60,15 +60,11 @@ export function ImageContentSection({
           reverse ? "lg:[&>*:first-child]:order-2" : ""
         }`}
       >
-        <div className="relative aspect-[4/5] overflow-hidden border border-gold-border lg:col-span-2 rounded-[2px]">
-          <Image
-            src={image}
-            alt={alt}
-            fill
-            className="object-cover"
-            sizes="(min-width: 1024px) 40vw, 100vw"
-          />
-        </div>
+        <AnimatedImage
+          src={image}
+          alt={alt}
+          containerClassName="aspect-[4/5] lg:col-span-2"
+        />
         <ScrollReveal className="lg:col-span-3">
           <Eyebrow>{eyebrow}</Eyebrow>
           <h2 className="font-display text-4xl text-cream sm:text-5xl">

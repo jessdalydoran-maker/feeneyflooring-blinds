@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { buildMetadata } from "@/lib/metadata";
 import { PageHero } from "@/components/sections/PageHero";
 import { ContentSection } from "@/components/sections/ContentSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { Eyebrow } from "@/components/ui/Badge";
 import { ScrollRevealGroup, RevealItem, ScrollReveal } from "@/components/animations/ScrollReveal";
+import { AnimatedImage } from "@/components/animations/AnimatedImage";
 import Link from "next/link";
 
 export const metadata: Metadata = buildMetadata({
@@ -146,17 +146,12 @@ export default function AboutPage() {
 
       <section className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          <ScrollReveal>
-            <div className="relative aspect-[4/3] overflow-hidden border border-gold-border rounded-[2px]">
-              <Image
-                src="/images/showroom-main.png"
-                alt="Feeney Flooring & Blinds showroom in Crumlin with flooring and carpet samples on display"
-                fill
-                className="object-cover"
-                sizes="(min-width: 1024px) 50vw, 100vw"
-              />
-            </div>
-          </ScrollReveal>
+          <AnimatedImage
+            src="/images/showroom-main.png"
+            alt="Feeney Flooring & Blinds showroom in Crumlin with flooring and carpet samples on display"
+            containerClassName="aspect-[4/3]"
+            sizes="(min-width: 1024px) 50vw, 100vw"
+          />
           <ScrollReveal delay={0.1}>
             <Eyebrow>The Showroom</Eyebrow>
             <h2 className="font-display text-4xl text-cream sm:text-5xl">

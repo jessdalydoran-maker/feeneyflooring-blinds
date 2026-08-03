@@ -27,14 +27,14 @@ export default function BlogPage() {
             <RevealItem key={post.slug}>
               <Link
                 href={`/blog/${post.slug}`}
-                className="group flex h-full flex-col overflow-hidden rounded-[2px] border border-gold-border bg-panel transition-colors duration-300 hover:border-gold"
+                className="group flex h-full flex-col overflow-hidden rounded-3xl border border-gold-border bg-panel transition-colors duration-300 hover:border-gold"
               >
                 <div className="relative aspect-[4/3] overflow-hidden border-b border-gold-border">
                   <Image
                     src={post.image}
                     alt={post.title}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                     sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   />
                 </div>

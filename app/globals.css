@@ -169,3 +169,35 @@ h3,
   background: var(--gold-subtle);
   color: var(--cream);
 }
+
+@keyframes hero-image-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.09);
+  }
+}
+
+.hero-image-zoom {
+  animation: hero-image-zoom 22s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-image-zoom {
+    animation: none;
+  }
+}
+
+.img-frame {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.img-zoom {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .img-zoom {
+  transform: scale(1.06);
+}

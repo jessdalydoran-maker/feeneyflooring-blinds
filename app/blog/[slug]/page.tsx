@@ -69,12 +69,12 @@ export default async function BlogPostPage({
       </section>
 
       <section className="mx-auto max-w-5xl px-6 lg:px-10">
-        <div className="relative aspect-[16/9] overflow-hidden rounded-[2px] border border-gold-border">
+        <div className="group relative aspect-[16/9] overflow-hidden rounded-3xl border border-gold-border">
           <Image
             src={post.image}
             alt={post.title}
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             sizes="(min-width: 1024px) 80vw, 100vw"
             priority
           />

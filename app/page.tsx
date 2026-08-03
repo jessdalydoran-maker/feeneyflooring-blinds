@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { buildMetadata } from "@/lib/metadata";
-import { HerringboneBackground } from "@/components/animations/HerringboneBackground";
 import { Eyebrow } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { TrustStrip } from "@/components/sections/TrustStrip";
@@ -23,12 +23,21 @@ export default function HomePage() {
   return (
     <>
       <section className="corner-brackets relative flex min-h-[calc(100vh-81px)] flex-col items-center justify-center overflow-hidden px-6 text-center">
-        <HerringboneBackground />
+        <div className="hero-image-zoom absolute inset-0">
+          <Image
+            src="/images/herringbone-living-room-hero.png"
+            alt="Ville Burriana Oak herringbone engineered wood flooring installed in a bright living room"
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
         <div
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "radial-gradient(circle at center, transparent 0%, var(--near-black) 75%)",
+              "radial-gradient(circle at center, rgba(20,20,16,0.55) 0%, var(--near-black) 85%)",
           }}
         />
         <div className="relative z-10 mx-auto max-w-4xl">
