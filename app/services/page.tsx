@@ -24,7 +24,7 @@ const services = [
   {
     name: "Engineered Wood",
     href: "/services/engineered-wood",
-    image: "/images/herringbone-hero.jpg",
+    image: "/images/herringbone-close-up.jpg",
     body: "Ville Burriana Oak herringbone and plank flooring, fitted with genuine craftsmanship and precision.",
   },
   {

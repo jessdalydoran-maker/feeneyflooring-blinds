@@ -65,7 +65,7 @@ export default function HomePage() {
         eyebrow="Signature Product"
         title="The floor that stops"
         italicTitle="people in their tracks."
-        image="/images/herringbone-hero.jpg"
+        image="/images/herringbone-close-up.jpg"
         alt="Ville Burriana Oak herringbone engineered wood flooring installed in a hallway"
         productLabel="Ville Burriana Oak Herringbone"
         cta={{ label: "Explore Engineered Wood →", href: "/services/engineered-wood" }}

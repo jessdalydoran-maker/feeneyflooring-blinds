@@ -118,7 +118,7 @@ export default function FlooringHubPage() {
         eyebrow="Engineered Wood"
         title="Engineered Wood &"
         italicTitle="Herringbone"
-        image="/images/herringbone-hero.jpg"
+        image="/images/herringbone-close-up.jpg"
         alt="Ville Burriana Oak herringbone engineered wood flooring installed in a hallway"
         cta={{ label: "Explore Engineered Wood", href: "/services/engineered-wood" }}
       >

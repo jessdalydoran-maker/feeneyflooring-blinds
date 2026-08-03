@@ -66,8 +66,8 @@ export default function StairFittingPage() {
         eyebrow="Why It's Different"
         title="Specialist Fitting"
         italicTitle="for Stairs"
-        image="/images/stair-carpet-zigzag.jpg"
-        alt="Precisely fitted stair carpet showing angled zigzag pattern detail on staircase"
+        image="/images/stair-carpet-full.jpg"
+        alt="Precisely fitted stair carpet running the full length of a staircase"
       >
         <p>
           Fitting flooring on stairs is a genuinely different skill from
