@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useCookieBannerVisible } from "@/lib/useCookieBannerVisible";
 
 interface Message {
   role: "user" | "assistant";
@@ -31,6 +32,7 @@ export function FlynnChatbot() {
   const [offline, setOffline] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
   const sessionId = useRef("");
+  const bannerVisible = useCookieBannerVisible();
 
   useEffect(() => {
     sessionId.current = getSessionId();
@@ -101,7 +103,7 @@ export function FlynnChatbot() {
   return (
     <>
       <AnimatePresence>
-        {open && (
+        {open && !bannerVisible && (
           <motion.div
             initial={{ opacity: 0, y: 16, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -195,7 +197,9 @@ export function FlynnChatbot() {
       <button
         onClick={() => setOpen((o) => !o)}
         aria-label="Chat with Flynn"
-        className="fixed bottom-24 right-4 z-40 flex items-center gap-2 rounded-full border border-gold-border bg-near-black px-4 py-3 shadow-lg transition-colors hover:border-gold sm:right-6"
+        className={`fixed bottom-24 right-4 z-40 flex items-center gap-2 rounded-full border border-gold-border bg-near-black px-4 py-3 shadow-lg transition-opacity duration-300 hover:border-gold sm:right-6 ${
+          bannerVisible ? "pointer-events-none opacity-0" : "opacity-100"
+        }`}
       >
         <span className="relative flex h-2.5 w-2.5">
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-gold opacity-60" />

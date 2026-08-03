@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { notifyCookieConsentChanged } from "@/lib/useCookieBannerVisible";
 
 export function CookieBanner() {
   const [show, setShow] = useState(false);
@@ -14,6 +15,7 @@ export function CookieBanner() {
   function decide(value: "accepted" | "declined") {
     localStorage.setItem("feeney-cookie-consent", value);
     setShow(false);
+    notifyCookieConsentChanged();
   }
 
   if (!show) return null;

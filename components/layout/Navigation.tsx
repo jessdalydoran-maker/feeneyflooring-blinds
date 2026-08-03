@@ -81,7 +81,8 @@ export function Navigation() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            exit={{ opacity: 0, transition: { duration: 0 } }}
+            transition={{ duration: 0.2 }}
             className="fixed inset-0 z-50 flex flex-col items-center justify-center gap-10 bg-near-black lg:hidden"
           >
             <button
