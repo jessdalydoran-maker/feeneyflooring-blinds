@@ -100,8 +100,8 @@ export default function RomanBlindsPage() {
         eyebrow="Warmth"
         title="Elegance for"
         italicTitle="Period & Traditional Interiors"
-        image="/images/blinds-narrow.jpg"
-        alt="Roman blind with folded fabric pleats fitted to a narrow window"
+        image="/images/blinds-arched-window-shutters.png"
+        alt="Made to measure window covering fitted to an arched period window"
       >
         <p>
           The folded fabric structure of a roman blind adds genuine texture
@@ -123,8 +123,8 @@ export default function RomanBlindsPage() {
         eyebrow="Best Rooms"
         title="Where Roman Blinds"
         italicTitle="Work Best"
-        image="/images/blinds-square.jpg"
-        alt="Roman blind fitted in a bedroom window"
+        image="/images/blinds-venetian-street-view.png"
+        alt="Made to measure blinds fitted to a large bedroom window"
         reverse
       >
         <p>

@@ -12,7 +12,7 @@ export function buildMetadata({
   title,
   description,
   path,
-  image = "/images/herringbone-close-up.jpg",
+  image = "/images/herringbone-living-room-hero.png",
 }: PageMetaInput): Metadata {
   const url = `${SITE_URL}${path}`;
   return {

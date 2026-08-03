@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     category: "Flooring Guides",
     excerpt:
       "Herringbone is back in a big way. Here's everything you need to know before you commit to the pattern — engineered vs solid, real cost, and how to style around it.",
-    image: "/images/herringbone-close-up.jpg",
+    image: "/images/herringbone-living-room-hero.png",
     datePublished: "2026-05-12",
     metaDescription:
       "A complete, honest guide to herringbone flooring for Northern Ireland homes — engineered vs solid wood, real installation costs, room suitability, care and styling advice from Feeney Flooring.",
@@ -265,7 +265,7 @@ export const blogPosts: BlogPost[] = [
     category: "Blinds Guides",
     excerpt:
       "From measuring to fitting, safety regulations to cost — everything you need to know before choosing blinds for your home.",
-    image: "/images/blinds-window.jpg",
+    image: "/images/blinds-venetian-street-view.png",
     datePublished: "2026-07-08",
     metaDescription:
       "A complete guide to made to measure blinds for Northern Ireland homes — how measuring and fitting works, blind types explained, child safety rules, and a room-by-room cost guide.",

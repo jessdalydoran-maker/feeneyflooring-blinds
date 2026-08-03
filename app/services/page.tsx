@@ -24,7 +24,7 @@ const services = [
   {
     name: "Engineered Wood",
     href: "/services/engineered-wood",
-    image: "/images/herringbone-close-up.jpg",
+    image: "/images/herringbone-living-room-hero.png",
     body: "Ville Burriana Oak herringbone and plank flooring, fitted with genuine craftsmanship and precision.",
   },
   {
@@ -54,7 +54,7 @@ const services = [
   {
     name: "Blinds",
     href: "/services/blinds",
-    image: "/images/blinds-window.jpg",
+    image: "/images/blinds-arched-window-shutters.png",
     body: "Made to measure roller, venetian, vertical, roman and blackout blinds for every window in the house.",
   },
 ];

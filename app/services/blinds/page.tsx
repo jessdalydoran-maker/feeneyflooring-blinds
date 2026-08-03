@@ -111,8 +111,8 @@ export default function BlindsPage() {
         eyebrow="Roller Blinds"
         title="Roller Blinds —"
         italicTitle="Clean & Versatile"
-        image="/images/blinds-window.jpg"
-        alt="Roller blind fitted to a living room window by Feeney Flooring & Blinds"
+        image="/images/blinds-arched-window-shutters.png"
+        alt="Plantation-style shutters fitted to an arched window by Feeney Flooring & Blinds"
         cta={{ label: "Explore Roller Blinds", href: "/services/roller-blinds" }}
       >
         <p>
@@ -135,8 +135,8 @@ export default function BlindsPage() {
         eyebrow="Venetian Blinds"
         title="Venetian Blinds —"
         italicTitle="Precise Control"
-        image="/images/blinds-square.jpg"
-        alt="Wood venetian blind with slats fitted to a square window"
+        image="/images/blinds-venetian-street-view.png"
+        alt="Aluminium venetian blinds with horizontal slats fitted to a large living room window"
         reverse
         cta={{ label: "Explore Venetian Blinds", href: "/services/venetian-blinds" }}
       >
@@ -158,8 +158,8 @@ export default function BlindsPage() {
         eyebrow="Vertical Blinds"
         title="Vertical Blinds —"
         italicTitle="Doors & Large Panes"
-        image="/images/blinds-cafe-shutters.jpg"
-        alt="Vertical blind fitted across a large patio door window"
+        image="/images/blinds-arched-window-shutters.png"
+        alt="Made to measure shutters fitted to a large window, showing the quality of fit we bring to every window covering"
         cta={{ label: "Explore Vertical Blinds", href: "/services/vertical-blinds" }}
       >
         <p>
@@ -180,8 +180,8 @@ export default function BlindsPage() {
         eyebrow="Roman Blinds"
         title="Roman Blinds —"
         italicTitle="Warmth & Texture"
-        image="/images/blinds-narrow.jpg"
-        alt="Roman blind with folded fabric fitted to a narrow window"
+        image="/images/blinds-venetian-street-view.png"
+        alt="Made to measure blinds fitted to a large window, showing precise, tailored coverage"
         reverse
         cta={{ label: "Explore Roman Blinds", href: "/services/roman-blinds" }}
       >
@@ -204,8 +204,8 @@ export default function BlindsPage() {
         eyebrow="Blackout Blinds"
         title="Blackout Blinds —"
         italicTitle="Complete Darkness"
-        image="/images/blinds-window.jpg"
-        alt="Blackout roller blind fitted to a bedroom window blocking out light"
+        image="/images/blinds-arched-window-shutters.png"
+        alt="Made to measure window covering fitted for complete light control"
         cta={{ label: "Explore Blackout Blinds", href: "/services/blackout-blinds" }}
       >
         <p>

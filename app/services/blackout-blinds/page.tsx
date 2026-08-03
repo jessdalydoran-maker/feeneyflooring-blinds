@@ -101,8 +101,8 @@ export default function BlackoutBlindsPage() {
         eyebrow="Sleep Quality"
         title="Better Sleep in"
         italicTitle="Complete Darkness"
-        image="/images/blinds-window.jpg"
-        alt="Blackout blind fitted to a bedroom window for complete darkness"
+        image="/images/blinds-arched-window-shutters.png"
+        alt="Made to measure window covering fitted for a well-shaded bedroom"
       >
         <p>
           Light exposure, even in small amounts, can interfere with the
@@ -123,8 +123,8 @@ export default function BlackoutBlindsPage() {
         eyebrow="Nurseries"
         title="Safe, Dark Naps"
         italicTitle="for Little Ones"
-        image="/images/blinds-narrow.jpg"
-        alt="Blackout blind fitted to a nursery window"
+        image="/images/blinds-venetian-street-view.png"
+        alt="Made to measure blinds fitted for precise light control in a child's room"
         reverse
       >
         <p>

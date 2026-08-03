@@ -104,8 +104,8 @@ export default function VenetianBlindsPage() {
         eyebrow="Light Control"
         title="Tilt for"
         italicTitle="Precise Adjustment"
-        image="/images/blinds-square.jpg"
-        alt="Wood venetian blind with tilted slats controlling light in a square window"
+        image="/images/blinds-venetian-street-view.png"
+        alt="Aluminium venetian blind with tilted slats controlling light in a large window"
       >
         <p>
           The defining feature of a venetian blind is the tilting slat
@@ -127,8 +127,8 @@ export default function VenetianBlindsPage() {
         eyebrow="Best Rooms"
         title="Where Venetians"
         italicTitle="Work Best"
-        image="/images/blinds-cafe-shutters.jpg"
-        alt="Aluminium venetian blind fitted in a bright kitchen window"
+        image="/images/blinds-arched-window-shutters.png"
+        alt="Made to measure window covering fitted in a bright, tiled bathroom"
         reverse
       >
         <p>

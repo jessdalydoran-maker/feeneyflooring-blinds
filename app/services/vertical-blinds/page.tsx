@@ -99,8 +99,8 @@ export default function VerticalBlindsPage() {
         eyebrow="Light Control"
         title="Rotating Vanes,"
         italicTitle="Adjustable Light"
-        image="/images/blinds-cafe-shutters.jpg"
-        alt="Vertical blind vanes rotated to control light across a large window"
+        image="/images/blinds-arched-window-shutters.png"
+        alt="Made to measure window covering fitted across a large arched window"
       >
         <p>
           Each vane rotates on its own carrier, so you can angle the entire
@@ -122,8 +122,8 @@ export default function VerticalBlindsPage() {
         eyebrow="Fabric & Vanes"
         title="Options for"
         italicTitle="Every Room"
-        image="/images/blinds-window.jpg"
-        alt="Close up of vertical blind vane fabric texture"
+        image="/images/blinds-venetian-street-view.png"
+        alt="Made to measure blinds fitted across a wide window with adjustable light control"
         reverse
       >
         <p>

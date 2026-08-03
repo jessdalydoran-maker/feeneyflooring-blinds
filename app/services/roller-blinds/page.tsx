@@ -90,8 +90,8 @@ export default function RollerBlindsPage() {
         eyebrow="Fabric Options"
         title="Plain, Patterned"
         italicTitle="& Textured"
-        image="/images/blinds-window.jpg"
-        alt="Roller blind in plain fabric fitted to a living room window"
+        image="/images/blinds-venetian-street-view.png"
+        alt="Made to measure blinds fitted to a large living room window"
       >
         <p>
           Roller blind fabric comes in an enormous range — plain block
@@ -113,8 +113,8 @@ export default function RollerBlindsPage() {
         eyebrow="Light Control"
         title="Light Filtering"
         italicTitle="vs Blackout"
-        image="/images/blinds-square.jpg"
-        alt="Roller blind fabric close up showing weave and light filtering"
+        image="/images/blinds-arched-window-shutters.png"
+        alt="Made to measure window covering showing precise, tailored light control"
         reverse
       >
         <p>
