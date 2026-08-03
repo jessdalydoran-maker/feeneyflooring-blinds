@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
+import { FlynnChatbot } from "@/components/layout/FlynnChatbot";
 import { CookieBanner } from "@/components/layout/CookieBanner";
 import { JsonLd, localBusinessSchema } from "@/lib/schema";
 import { SITE_URL } from "@/lib/constants";
@@ -43,6 +44,7 @@ export default function RootLayout({
         <Navigation />
         <main className="flex-1 pt-[81px]">{children}</main>
         <Footer />
+        <FlynnChatbot />
         <WhatsAppButton />
         <CookieBanner />
       </body>

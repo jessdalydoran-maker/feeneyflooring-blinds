@@ -9,6 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.115.0",
+    "@calcom/embed-react": "^1.5.3",
+    "@react-email/components": "^1.0.12",
+    "@supabase/supabase-js": "^2.112.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.43.0",
     "next": "16.2.12",

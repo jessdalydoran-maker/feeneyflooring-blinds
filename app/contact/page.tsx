@@ -3,9 +3,10 @@ import { buildMetadata } from "@/lib/metadata";
 import { PageHero } from "@/components/sections/PageHero";
 import { ContactForm } from "@/components/sections/ContactForm";
 import { Eyebrow } from "@/components/ui/Badge";
-import { Button } from "@/components/ui/Button";
-import { ScrollReveal } from "@/components/animations/ScrollReveal";
+import { ScrollReveal, ScrollRevealGroup, RevealItem } from "@/components/animations/ScrollReveal";
+import { CalEmbed } from "@/components/sections/CalEmbed";
 import { BUSINESS } from "@/lib/constants";
+import { CAL_LINKS } from "@/lib/cal";
 import Link from "next/link";
 
 export const metadata: Metadata = buildMetadata({
@@ -87,21 +88,29 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="border-t border-gold-border bg-panel">
-        <div className="mx-auto max-w-4xl px-6 py-20 text-center lg:px-10">
-          <Eyebrow>Book an Appointment</Eyebrow>
-          <h2 className="font-display text-4xl text-cream sm:text-5xl">
-            Two ways to <span className="text-gold italic">get started.</span>
-          </h2>
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <Button href="/quote" variant="primary">
-              Book a Showroom Visit
-            </Button>
-            <Button href="/quote" variant="secondary">
-              Book a Home Measurement
-            </Button>
+      <section id="book" className="border-t border-gold-border bg-panel">
+        <div className="mx-auto max-w-6xl px-6 py-20 lg:px-10">
+          <div className="text-center">
+            <Eyebrow>Book an Appointment</Eyebrow>
+            <h2 className="font-display text-4xl text-cream sm:text-5xl">
+              Two ways to <span className="text-gold italic">get started.</span>
+            </h2>
           </div>
-          <p className="mt-8 text-sm font-light text-cream-dim">
+          <ScrollRevealGroup className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2">
+            <RevealItem>
+              <p className="mb-4 text-center font-display text-2xl text-cream">
+                Book a Showroom Visit
+              </p>
+              <CalEmbed calLink={CAL_LINKS.showroomVisit} label="Book a Showroom Visit" />
+            </RevealItem>
+            <RevealItem>
+              <p className="mb-4 text-center font-display text-2xl text-cream">
+                Book a Home Measurement
+              </p>
+              <CalEmbed calLink={CAL_LINKS.homeMeasurement} label="Book a Home Measurement" />
+            </RevealItem>
+          </ScrollRevealGroup>
+          <p className="mt-10 text-center text-sm font-light text-cream-dim">
             Prefer to browse first? See our full{" "}
             <Link href="/services" className="text-gold hover:text-gold-light">
               range of services

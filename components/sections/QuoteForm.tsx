@@ -112,13 +112,24 @@ export function QuoteForm() {
 
   if (done) {
     return (
-      <div className="border border-gold-border bg-panel p-10 text-center rounded-[2px]">
+      <div className="rounded-3xl border border-gold-border bg-panel p-10 text-center">
         <p className="font-display text-3xl italic text-gold">Thank you, {form.name.split(" ")[0]}.</p>
         <p className="mt-4 text-base font-light leading-[1.85] text-cream-dim">
           Your quote request has been received. A confirmation email is on
           its way, and we&apos;ll be in touch within 2 hours during opening
           hours to talk through your project.
         </p>
+        <p className="mt-8 text-sm font-light text-cream-dim">
+          While you wait, why not book a free measure?
+        </p>
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-4">
+          <Button href="/contact#book" variant="primary">
+            Book a Showroom Visit
+          </Button>
+          <Button href="/contact#book" variant="secondary">
+            Book a Home Measurement
+          </Button>
+        </div>
       </div>
     );
   }

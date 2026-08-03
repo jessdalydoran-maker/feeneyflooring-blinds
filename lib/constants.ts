@@ -30,6 +30,11 @@ export const BUSINESS = {
     count: "29",
     recommend: "98%",
   },
+  // Placeholder review links — replace with the real Google Place review
+  // link and Facebook page reviews URL once available.
+  googleReviewUrl:
+    "https://search.google.com/local/writereview?q=Feeney+Flooring+%26+Blinds+Crumlin",
+  facebookReviewUrl: "https://www.facebook.com/FeeneyFlooring/reviews",
 };
 
 export const NAV_LINKS = [
