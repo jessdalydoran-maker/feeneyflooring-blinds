@@ -32,14 +32,24 @@ export function Footer() {
               Premium flooring and blinds, measured, supplied and fitted
               across Crumlin, Antrim and Belfast.
             </p>
-            <a
-              href={BUSINESS.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-block text-[11px] uppercase tracking-[0.2em] text-gold hover:text-gold-light"
-            >
-              Facebook →
-            </a>
+            <div className="mt-6 flex gap-5">
+              <a
+                href={BUSINESS.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[11px] uppercase tracking-[0.2em] text-gold hover:text-gold-light"
+              >
+                Facebook →
+              </a>
+              <a
+                href={BUSINESS.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[11px] uppercase tracking-[0.2em] text-gold hover:text-gold-light"
+              >
+                Instagram →
+              </a>
+            </div>
           </div>
 
           <div>

@@ -7,7 +7,8 @@ export const BUSINESS = {
   phone: "07720 981809",
   phoneHref: "tel:+447720981809",
   whatsapp: "https://wa.me/447720981809",
-  facebook: "https://www.facebook.com/FeeneyFlooring/",
+  facebook: "https://www.facebook.com/FeeneyFlooring",
+  instagram: "https://www.instagram.com/feeneyflooring/",
   address: {
     street: "42 Belfast Road, Nutts Corner",
     locality: "Crumlin",
@@ -30,8 +31,8 @@ export const BUSINESS = {
     count: "29",
     recommend: "98%",
   },
-  // Placeholder review links — replace with the real Google Place review
-  // link and Facebook page reviews URL once available.
+  // googleReviewUrl is still a placeholder — replace with the real Google
+  // Place review link once available.
   googleReviewUrl:
     "https://search.google.com/local/writereview?q=Feeney+Flooring+%26+Blinds+Crumlin",
   facebookReviewUrl: "https://www.facebook.com/FeeneyFlooring/reviews",

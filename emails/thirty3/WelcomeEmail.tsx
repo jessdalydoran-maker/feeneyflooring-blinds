@@ -199,10 +199,13 @@ export default function WelcomeEmail({ unsubscribeUrl = "#" }: WelcomeEmailProps
           <Hr style={styles.hr} />
 
           <Section style={styles.footerSection}>
-            <Link href="#" style={styles.socialLink}>
+            <Link href="https://www.instagram.com/thirty3.coffee/" style={styles.socialLink}>
               Instagram
             </Link>
-            <Link href="#" style={styles.socialLink}>
+            <Link
+              href="https://www.facebook.com/profile.php?id=61586683685409"
+              style={styles.socialLink}
+            >
               Facebook
             </Link>
             <Text style={styles.footerText}>
