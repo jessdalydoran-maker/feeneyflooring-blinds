@@ -8,6 +8,7 @@ import { FindUs } from "@/components/thirty3/FindUs";
 import { EmailSignup } from "@/components/thirty3/EmailSignup";
 import { Footer } from "@/components/thirty3/Footer";
 import { BackToTop } from "@/components/thirty3/BackToTop";
+import { BackToFeeney } from "@/components/thirty3/BackToFeeney";
 
 const schema = {
   "@context": "https://schema.org",
@@ -44,6 +45,7 @@ export default function Thirty3CoffeePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <BackToFeeney />
       <Hero />
       <TrustStrip />
       <OpeningHours />
