@@ -26,56 +26,61 @@ export function Navigation() {
   }, [open]);
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-        scrolled
-          ? "bg-near-black/80 backdrop-blur-md border-b border-gold-border"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
-        <Link href="/" className="flex items-center gap-3">
-          <Image
-            src="/images/logo.jpg"
-            alt="Feeney Flooring & Blinds logo"
-            width={36}
-            height={36}
-            className="rounded-[2px]"
-          />
-          <span className="font-display text-xl text-cream">
-            Feeney <span className="text-gold italic">Flooring</span> &amp; Blinds
-          </span>
-        </Link>
+    <>
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
+          scrolled
+            ? "bg-near-black/80 backdrop-blur-md border-b border-gold-border"
+            : "bg-transparent"
+        }`}
+      >
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
+          <Link href="/" className="flex items-center gap-3">
+            <Image
+              src="/images/logo.jpg"
+              alt="Feeney Flooring & Blinds logo"
+              width={36}
+              height={36}
+              className="rounded-[2px]"
+            />
+            <span className="font-display text-xl text-cream">
+              Feeney <span className="text-gold italic">Flooring</span> &amp; Blinds
+            </span>
+          </Link>
 
-        <nav className="hidden items-center gap-10 lg:flex">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-[11px] font-medium uppercase tracking-[0.2em] text-cream-dim transition-colors hover:text-gold"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+          <nav className="hidden items-center gap-10 lg:flex">
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-[11px] font-medium uppercase tracking-[0.2em] text-cream-dim transition-colors hover:text-gold"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
 
-        <div className="hidden lg:block">
-          <Button href="/contact" variant="primary">
-            Book a Free Measure
-          </Button>
+          <div className="hidden lg:block">
+            <Button href="/contact" variant="primary">
+              Book a Free Measure
+            </Button>
+          </div>
+
+          <button
+            aria-label="Open menu"
+            className="flex flex-col gap-1.5 lg:hidden"
+            onClick={() => setOpen(true)}
+          >
+            <span className="h-px w-7 bg-cream" />
+            <span className="h-px w-7 bg-cream" />
+            <span className="h-px w-7 bg-cream" />
+          </button>
         </div>
+      </header>
 
-        <button
-          aria-label="Open menu"
-          className="flex flex-col gap-1.5 lg:hidden"
-          onClick={() => setOpen(true)}
-        >
-          <span className="h-px w-7 bg-cream" />
-          <span className="h-px w-7 bg-cream" />
-          <span className="h-px w-7 bg-cream" />
-        </button>
-      </div>
-
+      {/* Rendered outside <header> so Safari's backdrop-filter (applied to the
+          header once scrolled) never becomes this fixed overlay's containing
+          block — that quirk was clipping the menu to the header's own box. */}
       <AnimatePresence>
         {open && (
           <motion.div
@@ -115,6 +120,6 @@ export function Navigation() {
           </motion.div>
         )}
       </AnimatePresence>
-    </header>
+    </>
   );
 }
