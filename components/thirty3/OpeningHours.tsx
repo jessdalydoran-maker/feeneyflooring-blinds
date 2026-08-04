@@ -2,6 +2,15 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 
+const icons = {
+  car: (
+    <path d="M5 11 6.5 6h11L19 11h1a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-1a2 2 0 1 1-4 0H9a2 2 0 1 1-4 0H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1h1Zm2.1-3-1 3h11.8l-1-3H7.1ZM7 16a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" />
+  ),
+  chair: (
+    <path d="M6 3h2v9H6V3Zm10 0h2v9h-2V3ZM6 12h12v2H6v-2Zm0 3h2v6H6v-6Zm10 0h2v6h-2v-6Z" />
+  ),
+};
+
 const cards = [
   {
     label: "MONDAY TO FRIDAY",
@@ -65,8 +74,18 @@ export function OpeningHours() {
               </p>
               <p className="mt-4 font-t3-heading text-3xl text-t3-gold sm:text-4xl">{card.time}</p>
               <div className="mt-6 flex items-center gap-4 text-sm font-light text-t3-off-white/80">
-                <span className="flex items-center gap-2">🚗 Drive Thru</span>
-                <span className="flex items-center gap-2">🪑 Sit In</span>
+                <span className="flex items-center gap-2">
+                  <svg viewBox="0 0 24 24" className="h-4 w-4 fill-t3-gold">
+                    {icons.car}
+                  </svg>
+                  Drive Thru
+                </span>
+                <span className="flex items-center gap-2">
+                  <svg viewBox="0 0 24 24" className="h-4 w-4 fill-t3-gold">
+                    {icons.chair}
+                  </svg>
+                  Sit In
+                </span>
               </div>
             </motion.div>
           ))}

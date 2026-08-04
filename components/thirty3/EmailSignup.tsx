@@ -70,7 +70,7 @@ export function EmailSignup() {
             <svg viewBox="0 0 24 24" className="h-10 w-10 fill-t3-gold">
               <path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z" />
             </svg>
-            <p className="font-t3-heading text-lg text-t3-white">You&apos;re in! See you soon ☕</p>
+            <p className="font-t3-heading text-lg text-t3-white">You&apos;re in! See you soon.</p>
           </motion.div>
         ) : (
           <form onSubmit={handleSubmit} className="mt-8">
