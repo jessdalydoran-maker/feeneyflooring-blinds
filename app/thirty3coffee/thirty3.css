@@ -35,6 +35,7 @@
   color: var(--t3-white);
   font-family: var(--font-t3-body), sans-serif;
   font-weight: 300;
+  overflow-x: hidden;
 }
 
 .t3-root h1,

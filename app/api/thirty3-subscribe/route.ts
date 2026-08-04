@@ -49,6 +49,7 @@ export async function POST(req: NextRequest) {
     .insert({ email, source: "website" });
 
   if (insertError) {
+    console.error("[thirty3-subscribe] Supabase insert failed:", insertError.message);
     return Response.json({ error: "Something went wrong. Please try again." }, { status: 500 });
   }
 
