@@ -14,6 +14,27 @@ const WELCOME_MESSAGE: Message = {
     "Hi, I'm Flynn — the Feeney Flooring & Blinds assistant. Ask me about flooring, blinds, pricing, or book a free measure. How can I help?",
 };
 
+/**
+ * Flynn's replies come from Claude and often include **bold** markdown,
+ * but this is a plain-text chat bubble with no markdown renderer — without
+ * this, the literal asterisks show up in the UI. Strips them and renders
+ * the wrapped text as emphasis instead.
+ */
+function renderMessageContent(content: string) {
+  const segments = content.split(/(\*\*[^*]+\*\*)/g);
+  return segments.map((segment, i) => {
+    const match = segment.match(/^\*\*([^*]+)\*\*$/);
+    if (match) {
+      return (
+        <strong key={i} className="font-medium text-gold">
+          {match[1]}
+        </strong>
+      );
+    }
+    return <span key={i}>{segment}</span>;
+  });
+}
+
 function getSessionId() {
   if (typeof window === "undefined") return "";
   const existing = window.sessionStorage.getItem("flynn-session-id");
@@ -142,7 +163,7 @@ export function FlynnChatbot() {
                         : "border border-gold-border bg-panel text-cream"
                     }`}
                   >
-                    {message.content || (
+                    {message.content ? renderMessageContent(message.content) : (
                       <span className="flex gap-1 py-1">
                         <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-gold [animation-delay:-0.3s]" />
                         <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-gold [animation-delay:-0.15s]" />
