@@ -61,14 +61,24 @@ export async function POST(req: NextRequest) {
   }
 
   if (email) {
-    await sendBookingConfirmationEmail(email, {
+    const confirmationResult = await sendBookingConfirmationEmail(email, {
       name,
       bookingType,
       scheduledAt: payload.startTime,
     });
+
+    if (supabase) {
+      await supabase.from("email_log").insert({
+        contact_id: contactId,
+        email_type: "confirmation",
+        subject: "Your appointment with Feeney Flooring & Blinds is confirmed",
+        sent_at: new Date().toISOString(),
+        status: confirmationResult.success ? "sent" : "failed",
+      });
+    }
   }
 
-  await sendNewBookingNotificationEmail("jessdalydoran@gmail.com", {
+  const notificationResult = await sendNewBookingNotificationEmail("jessdalydoran@gmail.com", {
     customerName: name,
     customerPhone: phone,
     customerEmail: email,
@@ -76,6 +86,16 @@ export async function POST(req: NextRequest) {
     scheduledAt: payload.startTime,
     notes: payload.responses?.notes?.value ?? null,
   });
+
+  if (supabase) {
+    await supabase.from("email_log").insert({
+      contact_id: contactId,
+      email_type: "confirmation",
+      subject: `New ${bookingType} — ${name}`,
+      sent_at: new Date().toISOString(),
+      status: notificationResult.success ? "sent" : "failed",
+    });
+  }
 
   return Response.json({ ok: true, contactId });
 }

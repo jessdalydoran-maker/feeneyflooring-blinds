@@ -57,7 +57,7 @@ export async function sendReviewRequest(contactId: string): Promise<ActionResult
     return { success: false, message: "This contact has no email address on file." };
   }
 
-  await sendReviewRequestEmail(contact.email, {
+  const result = await sendReviewRequestEmail(contact.email, {
     name: contact.name,
     googleReviewUrl: BUSINESS.googleReviewUrl,
     facebookReviewUrl: BUSINESS.facebookReviewUrl,
@@ -68,10 +68,14 @@ export async function sendReviewRequest(contactId: string): Promise<ActionResult
     email_type: "review_request",
     subject: "How did we do? — Feeney Flooring & Blinds",
     sent_at: new Date().toISOString(),
-    status: "sent",
+    status: result.success ? "sent" : "failed",
   });
 
   revalidatePath("/admin/emails");
+
+  if (!result.success) {
+    return { success: false, message: `Email failed to send: ${result.error}` };
+  }
   return { success: true, message: "Review request sent." };
 }
 
