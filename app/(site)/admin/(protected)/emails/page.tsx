@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { getSupabaseAdmin, EmailLog, Contact } from "@/lib/supabase";
 import { Eyebrow } from "@/components/ui/Badge";
-import { EmptyState } from "@/app/admin/components/EmptyState";
-import { StatusBadge } from "@/app/admin/components/StatusBadge";
-import { formatDateTime } from "@/app/admin/lib/format";
+import { EmptyState } from "@/app/(site)/admin/components/EmptyState";
+import { StatusBadge } from "@/app/(site)/admin/components/StatusBadge";
+import { formatDateTime } from "@/app/(site)/admin/lib/format";
 
 export default async function AdminEmailsPage({
   searchParams,

@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+:root {
+  --t3-black: #0d0d0d;
+  --t3-dark: #161616;
+  --t3-panel: #1c1c1c;
+  --t3-gold: #f5c518;
+  --t3-gold-dark: #d4a800;
+  --t3-gold-glow: rgba(245, 197, 24, 0.15);
+  --t3-gold-border: rgba(245, 197, 24, 0.25);
+  --t3-white: #ffffff;
+  --t3-off-white: #f5f0e8;
+}
+
+@theme inline {
+  --color-t3-black: var(--t3-black);
+  --color-t3-dark: var(--t3-dark);
+  --color-t3-panel: var(--t3-panel);
+  --color-t3-gold: var(--t3-gold);
+  --color-t3-gold-dark: var(--t3-gold-dark);
+  --color-t3-gold-glow: var(--t3-gold-glow);
+  --color-t3-gold-border: var(--t3-gold-border);
+  --color-t3-white: var(--t3-white);
+  --color-t3-off-white: var(--t3-off-white);
+  --font-t3-heading: var(--font-space-grotesk);
+  --font-t3-body: var(--font-t3-inter);
+}
+
+.t3-root * {
+  box-sizing: border-box;
+}
+
+.t3-root {
+  background: var(--t3-black);
+  color: var(--t3-white);
+  font-family: var(--font-t3-body), sans-serif;
+  font-weight: 300;
+}
+
+.t3-root h1,
+.t3-root h2,
+.t3-root h3,
+.t3-root .font-t3-heading {
+  font-family: var(--font-t3-heading), sans-serif;
+  font-weight: 700;
+}
+
+.t3-bean-texture {
+  background-image: radial-gradient(
+    circle,
+    var(--t3-gold) 1px,
+    transparent 1.5px
+  );
+  background-size: 28px 28px;
+  opacity: 0.04;
+}
+
+@keyframes t3-underline {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.t3-underline {
+  transform-origin: left;
+  animation: t3-underline 0.9s 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .t3-underline {
+    animation: none;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes t3-badge-pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--t3-gold-glow);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(245, 197, 24, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(245, 197, 24, 0);
+  }
+}
+
+.t3-badge-pulse {
+  animation: t3-badge-pulse 1.8s cubic-bezier(0.16, 1, 0.3, 1) 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .t3-badge-pulse {
+    animation: none;
+  }
+}
+
+@keyframes t3-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.t3-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: t3-marquee 32s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .t3-marquee-track {
+    animation: none;
+  }
+}
+
+.t3-map-frame {
+  filter: grayscale(80%) sepia(20%);
+}
+
+.t3-gold-glow-shadow {
+  box-shadow: 0 0 24px 0 var(--t3-gold-glow);
+}

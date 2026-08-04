@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Cormorant_Garamond } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "Expert flooring and blinds supply and fit in Crumlin, Antrim and Belfast. Free measuring service. Engineered wood, LVT, carpet, laminate and made to measure blinds. 5 star rated.",
 };
 
-export default function RootLayout({
+export default function SiteLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

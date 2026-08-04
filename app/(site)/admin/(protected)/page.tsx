@@ -1,9 +1,9 @@
 import { getSupabaseAdmin, Contact, QuoteRequest, Booking } from "@/lib/supabase";
 import { Eyebrow } from "@/components/ui/Badge";
-import { EmptyState } from "@/app/admin/components/EmptyState";
-import { StatCard } from "@/app/admin/components/StatCard";
-import { relativeTime, formatCurrency, startOfMonthIso } from "@/app/admin/lib/format";
-import { markJobComplete, sendReviewRequest } from "@/app/admin/lib/actions";
+import { EmptyState } from "@/app/(site)/admin/components/EmptyState";
+import { StatCard } from "@/app/(site)/admin/components/StatCard";
+import { relativeTime, formatCurrency, startOfMonthIso } from "@/app/(site)/admin/lib/format";
+import { markJobComplete, sendReviewRequest } from "@/app/(site)/admin/lib/actions";
 
 export default async function AdminOverviewPage() {
   const supabase = getSupabaseAdmin();

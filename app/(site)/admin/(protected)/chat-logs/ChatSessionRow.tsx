@@ -3,7 +3,7 @@
 import { useState } from "react";
 import clsx from "clsx";
 import { ChatSession } from "@/lib/supabase";
-import { formatDateTime } from "@/app/admin/lib/format";
+import { formatDateTime } from "@/app/(site)/admin/lib/format";
 
 export function ChatSessionRow({
   session,

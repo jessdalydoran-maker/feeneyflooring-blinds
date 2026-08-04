@@ -3,8 +3,8 @@
 import { useState, useTransition } from "react";
 import { Contact } from "@/lib/supabase";
 import { isHighPriority } from "@/lib/lead-scoring";
-import { StatusBadge } from "@/app/admin/components/StatusBadge";
-import { formatDate } from "@/app/admin/lib/format";
+import { StatusBadge } from "@/app/(site)/admin/components/StatusBadge";
+import { formatDate } from "@/app/(site)/admin/lib/format";
 import {
   updateContactStatus,
   markJobComplete,

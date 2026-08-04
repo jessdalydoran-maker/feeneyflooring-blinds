@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getSupabaseAdmin, Contact } from "@/lib/supabase";
 import { Eyebrow } from "@/components/ui/Badge";
-import { EmptyState } from "@/app/admin/components/EmptyState";
+import { EmptyState } from "@/app/(site)/admin/components/EmptyState";
 import { FilterBar } from "./FilterBar";
 import { ContactRow } from "./ContactRow";
 

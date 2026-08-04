@@ -78,6 +78,16 @@ create table if not exists email_log (
   status text default 'sent'
 );
 
+-- thirty3coffee newsletter subscribers (standalone promo page, unrelated
+-- to the Feeney CRM tables above — shares this Supabase project only)
+create table if not exists thirty3_subscribers (
+  id uuid default gen_random_uuid() primary key,
+  created_at timestamp with time zone default now(),
+  email text unique not null,
+  source text default 'website',
+  active boolean default true
+);
+
 create index if not exists contacts_status_idx on contacts (status);
 create index if not exists contacts_lead_score_idx on contacts (lead_score desc);
 create index if not exists bookings_scheduled_at_idx on bookings (scheduled_at);
@@ -92,3 +102,4 @@ alter table chat_sessions enable row level security;
 alter table bookings enable row level security;
 alter table quote_requests enable row level security;
 alter table email_log enable row level security;
+alter table thirty3_subscribers enable row level security;

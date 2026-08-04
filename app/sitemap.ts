@@ -21,6 +21,7 @@ const staticRoutes = [
   "/blog",
   "/contact",
   "/quote",
+  "/thirty3coffee",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import Link from "next/link";
-import { isAdminAuthenticated, adminLogout } from "@/app/admin/actions";
+import { isAdminAuthenticated, adminLogout } from "@/app/(site)/admin/actions";
 
 const NAV_ITEMS = [
   { label: "Overview", href: "/admin" },

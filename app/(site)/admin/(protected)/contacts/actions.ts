@@ -5,7 +5,7 @@ import {
   markJobComplete as _markJobComplete,
   sendReviewRequest as _sendReviewRequest,
   ActionResult,
-} from "@/app/admin/lib/actions";
+} from "@/app/(site)/admin/lib/actions";
 
 export async function updateContactStatus(
   contactId: string,

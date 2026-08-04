@@ -1,9 +1,9 @@
 import { getSupabaseAdmin, QuoteRequest, Contact } from "@/lib/supabase";
 import { isHighPriorityQuote } from "@/lib/lead-scoring";
 import { Eyebrow } from "@/components/ui/Badge";
-import { EmptyState } from "@/app/admin/components/EmptyState";
-import { HighPriorityBadge } from "@/app/admin/components/StatusBadge";
-import { formatDate, formatCurrency } from "@/app/admin/lib/format";
+import { EmptyState } from "@/app/(site)/admin/components/EmptyState";
+import { HighPriorityBadge } from "@/app/(site)/admin/components/StatusBadge";
+import { formatDate, formatCurrency } from "@/app/(site)/admin/lib/format";
 
 export default async function AdminQuotesPage() {
   const supabase = getSupabaseAdmin();

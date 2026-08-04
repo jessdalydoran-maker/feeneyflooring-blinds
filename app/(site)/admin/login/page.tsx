@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
-import { adminLogin, AdminLoginState } from "@/app/admin/actions";
+import { adminLogin, AdminLoginState } from "@/app/(site)/admin/actions";
 
 const initialState: AdminLoginState = {};
 

@@ -1,6 +1,6 @@
 import { getSupabaseAdmin, ChatSession, Contact } from "@/lib/supabase";
 import { Eyebrow } from "@/components/ui/Badge";
-import { EmptyState } from "@/app/admin/components/EmptyState";
+import { EmptyState } from "@/app/(site)/admin/components/EmptyState";
 import { ChatSessionRow } from "./ChatSessionRow";
 
 export default async function AdminChatLogsPage() {
