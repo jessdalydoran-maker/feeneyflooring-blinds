@@ -9,13 +9,13 @@ export const BUSINESS = {
   whatsapp: "https://wa.me/447720981809",
   facebook: "https://www.facebook.com/FeeneyFlooring/",
   address: {
-    street: "32-34 Main Street",
+    street: "42 Belfast Road, Nutts Corner",
     locality: "Crumlin",
     region: "County Antrim",
-    postalCode: "BT29 4UP",
+    postalCode: "BT29 4TH",
     country: "GB",
   },
-  addressFull: "32-34 Main Street, Crumlin, BT29 4UP",
+  addressFull: "42 Belfast Road, Nutts Corner, Crumlin, BT29 4TH",
   hours: [
     { day: "Monday", hours: "Closed" },
     { day: "Tuesday", hours: "Closed" },

@@ -67,7 +67,7 @@ export default function ContactPage() {
             <div className="mt-8 aspect-video overflow-hidden rounded-3xl border border-gold-border">
               <iframe
                 title="Feeney Flooring & Blinds showroom location"
-                src="https://www.google.com/maps?q=32-34+Main+Street,+Crumlin,+BT29+4UP&output=embed"
+                src="https://www.google.com/maps?q=42+Belfast+Road,+Nutts+Corner,+Crumlin,+BT29+4TH&output=embed"
                 width="100%"
                 height="100%"
                 loading="lazy"

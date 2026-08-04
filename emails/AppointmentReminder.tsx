@@ -40,8 +40,8 @@ export default function AppointmentReminder({
 
       {isShowroomVisit ? (
         <Text style={styles.text}>
-          We&apos;re at 32-34 Main Street, Crumlin, BT29 4UP &mdash; plenty of parking right
-          outside.
+          We&apos;re at 42 Belfast Road, Nutts Corner, Crumlin, BT29 4TH
+          &mdash; plenty of parking right outside.
         </Text>
       ) : (
         <Text style={styles.text}>

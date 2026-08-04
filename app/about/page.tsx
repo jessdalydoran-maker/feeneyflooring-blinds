@@ -158,7 +158,7 @@ export default function AboutPage() {
               A relaxed way to <span className="text-gold italic">choose your floor.</span>
             </h2>
             <p className="mt-6 text-base font-light leading-[1.85] text-cream-dim">
-              Our Main Street showroom is built for browsing without
+              Our Nutts Corner showroom is built for browsing without
               pressure. Large sample boards let you see engineered wood,
               LVT, laminate and carpet in proper room-sized pieces, not tiny
               swatches, and our herringbone feature floor lets you feel the

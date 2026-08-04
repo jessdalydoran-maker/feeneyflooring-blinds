@@ -40,8 +40,8 @@ export default function BookingConfirmation({
 
       {isShowroomVisit ? (
         <Text style={styles.text}>
-          We&apos;re at 32-34 Main Street, Crumlin, BT29 4UP. Pop in any time during your slot, no
-          need to bring anything &mdash; we&apos;ll have samples ready for you.
+          We&apos;re at 42 Belfast Road, Nutts Corner, Crumlin, BT29 4TH. Pop in any time during
+          your slot, no need to bring anything &mdash; we&apos;ll have samples ready for you.
         </Text>
       ) : (
         <Text style={styles.text}>

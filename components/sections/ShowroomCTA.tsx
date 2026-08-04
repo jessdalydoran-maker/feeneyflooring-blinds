@@ -34,7 +34,7 @@ export function ShowroomCTA() {
               Book a Showroom Visit
             </Button>
             <Button
-              href="https://www.google.com/maps/search/?api=1&query=32-34+Main+Street+Crumlin+BT29+4UP"
+              href="https://www.google.com/maps/search/?api=1&query=42+Belfast+Road+Nutts+Corner+Crumlin+BT29+4TH"
               variant="secondary"
             >
               Get Directions

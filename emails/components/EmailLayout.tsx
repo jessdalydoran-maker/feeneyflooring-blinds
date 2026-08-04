@@ -141,7 +141,7 @@ export function Footer() {
   return (
     <Section style={styles.footerSection}>
       <Hr style={styles.hr} />
-      <Text style={styles.footerText}>32-34 Main Street, Crumlin, BT29 4UP, Northern Ireland</Text>
+      <Text style={styles.footerText}>42 Belfast Road, Nutts Corner, Crumlin, BT29 4TH, Northern Ireland</Text>
       <Text style={styles.footerText}>
         Thursday 10am&ndash;8pm &middot; Friday 10am&ndash;5pm &middot; Saturday 10am&ndash;5pm
       </Text>
