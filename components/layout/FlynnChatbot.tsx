@@ -15,13 +15,19 @@ const WELCOME_MESSAGE: Message = {
 };
 
 /**
- * Flynn's replies come from Claude and often include **bold** markdown,
- * but this is a plain-text chat bubble with no markdown renderer — without
- * this, the literal asterisks show up in the UI. Strips them and renders
- * the wrapped text as emphasis instead.
+ * Flynn's replies come from Claude and often include markdown, but this
+ * is a plain-text chat bubble with no markdown renderer — without this,
+ * the raw syntax shows up in the UI. The system prompt asks Claude to
+ * avoid headers/rules and stick to **bold**, but this strips headers
+ * (### ) and standalone horizontal rules (---) defensively in case it
+ * doesn't, then renders **bold** segments as emphasis instead of leaving
+ * the asterisks visible.
  */
 function renderMessageContent(content: string) {
-  const segments = content.split(/(\*\*[^*]+\*\*)/g);
+  const cleaned = content
+    .replace(/^#{1,6}\s*/gm, "")
+    .replace(/^\s*-{3,}\s*$/gm, "");
+  const segments = cleaned.split(/(\*\*[^*]+\*\*)/g);
   return segments.map((segment, i) => {
     const match = segment.match(/^\*\*([^*]+)\*\*$/);
     if (match) {
