@@ -26,7 +26,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <p className="font-display text-2xl text-cream">
-              Feeney <span className="text-gold italic">Flooring</span> &amp; Blinds
+              Feeney <span className="text-gold italic">Flooring</span>{" & Blinds"}
             </p>
             <p className="mt-4 max-w-xs text-sm font-light text-cream-dim">
               Premium flooring and blinds, measured, supplied and fitted

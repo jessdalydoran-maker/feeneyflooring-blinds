@@ -43,7 +43,7 @@ export function Navigation() {
             className="rounded-[2px]"
           />
           <span className="font-display text-xl text-cream">
-            Feeney <span className="text-gold italic">Flooring</span> &amp; Blinds
+            Feeney <span className="text-gold italic">Flooring</span>{" & Blinds"}
           </span>
         </Link>
 
