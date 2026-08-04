@@ -7,6 +7,7 @@ import { Menu } from "@/components/thirty3/Menu";
 import { FindUs } from "@/components/thirty3/FindUs";
 import { EmailSignup } from "@/components/thirty3/EmailSignup";
 import { Footer } from "@/components/thirty3/Footer";
+import { BackToTop } from "@/components/thirty3/BackToTop";
 
 const schema = {
   "@context": "https://schema.org",
@@ -52,6 +53,7 @@ export default function Thirty3CoffeePage() {
       <FindUs />
       <EmailSignup />
       <Footer />
+      <BackToTop />
     </>
   );
 }

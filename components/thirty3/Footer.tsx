@@ -14,6 +14,12 @@ export function Footer() {
       <p className="mt-8 text-[11px] font-light text-t3-off-white/30">
         © 2026 thirty3coffee
       </p>
+      <p className="mt-2 text-[11px] font-light text-t3-off-white/30">
+        Proudly part of{" "}
+        <a href="/" className="underline transition-colors hover:text-t3-gold">
+          Feeney Flooring &amp; Blinds
+        </a>
+      </p>
     </footer>
   );
 }

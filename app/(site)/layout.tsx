@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { FlynnChatbot } from "@/components/layout/FlynnChatbot";
 import { CookieBanner } from "@/components/layout/CookieBanner";
+import { BackToTop } from "@/components/layout/BackToTop";
 import { JsonLd, localBusinessSchema } from "@/lib/schema";
 import { SITE_URL } from "@/lib/constants";
 
@@ -46,6 +47,7 @@ export default function SiteLayout({
         <Footer />
         <FlynnChatbot />
         <WhatsAppButton />
+        <BackToTop />
         <CookieBanner />
       </body>
     </html>
