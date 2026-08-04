@@ -126,6 +126,18 @@ export function Footer() {
           </p>
           <p>Registered in Northern Ireland</p>
         </div>
+
+        <p className="mt-6 text-center text-[11px] font-light text-cream-muted">
+          Site created by{" "}
+          <a
+            href="https://quantumbusinessconsultants.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cream-dim underline decoration-gold-border underline-offset-2 transition-colors hover:text-gold"
+          >
+            Quantum AI Consultants
+          </a>
+        </p>
       </div>
     </footer>
   );

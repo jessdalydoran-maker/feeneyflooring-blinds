@@ -20,6 +20,17 @@ export function Footer() {
           Feeney Flooring &amp; Blinds
         </a>
       </p>
+      <p className="mt-6 text-[11px] font-light text-t3-off-white/30">
+        Site created by{" "}
+        <a
+          href="https://quantumbusinessconsultants.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline decoration-t3-gold-border underline-offset-2 transition-colors hover:text-t3-gold"
+        >
+          Quantum AI Consultants
+        </a>
+      </p>
     </footer>
   );
 }
