@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 
-const pillars = ["☕ GREAT COFFEE.", "👥 GREAT PEOPLE.", "♥ GREAT VIBES."];
+const pillars = ["GREAT COFFEE.", "GREAT PEOPLE.", "GREAT VIBES."];
 
 const lineVariants = {
   hidden: { opacity: 0, y: 24 },
@@ -14,12 +15,28 @@ export function Hero() {
 
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden px-6 pt-28 pb-16 lg:px-16">
-      <div className="t3-bean-texture pointer-events-none absolute inset-0" aria-hidden />
+      <div className={`absolute inset-0 ${reduce ? "" : "t3-image-zoom"}`} aria-hidden>
+        <Image
+          src="/images/thirty3/barista-latte-art-menu.png"
+          alt="Barista at thirty3coffee pouring latte art in front of the coffee menu board"
+          fill
+          priority
+          className="t3-duotone object-cover"
+          sizes="100vw"
+        />
+      </div>
       <div
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(circle at 30% 40%, var(--t3-gold-glow) 0%, transparent 60%)",
+            "linear-gradient(90deg, rgba(13,13,13,0.96) 0%, rgba(13,13,13,0.85) 35%, rgba(13,13,13,0.55) 65%, rgba(13,13,13,0.75) 100%), linear-gradient(to top, rgba(13,13,13,0.9) 0%, transparent 40%)",
+        }}
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background: "radial-gradient(circle at 30% 40%, var(--t3-gold-glow) 0%, transparent 60%)",
         }}
         aria-hidden
       />
@@ -95,7 +112,7 @@ export function Hero() {
             </a>
             <a
               href="#menu"
-              className="inline-flex items-center justify-center rounded border px-8 py-4 text-xs font-medium uppercase tracking-[0.2em] text-t3-gold transition-colors hover:bg-t3-gold-glow"
+              className="inline-flex items-center justify-center rounded border px-8 py-4 text-xs font-medium uppercase tracking-[0.2em] text-t3-gold backdrop-blur-sm transition-colors hover:bg-t3-gold-glow"
               style={{ borderColor: "var(--t3-gold)" }}
             >
               Our Menu
@@ -104,14 +121,14 @@ export function Hero() {
         </motion.div>
 
         <motion.div
-          className="flex justify-center lg:col-span-2"
+          className="hidden justify-center lg:col-span-2 lg:flex"
           initial={reduce ? undefined : { opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <div
-            className="t3-badge-pulse relative flex h-64 w-64 flex-col items-center justify-center rounded-full border text-center sm:h-80 sm:w-80"
-            style={{ borderColor: "var(--t3-gold)", background: "var(--t3-black)" }}
+            className="t3-badge-pulse relative flex h-64 w-64 flex-col items-center justify-center rounded-full border text-center backdrop-blur-md sm:h-80 sm:w-80"
+            style={{ borderColor: "var(--t3-gold)", background: "rgba(13,13,13,0.55)" }}
           >
             <span className="text-[10px] font-medium uppercase tracking-[0.3em] text-t3-off-white/60">
               EST. 2021

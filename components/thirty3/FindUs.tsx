@@ -1,13 +1,27 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 
 export function FindUs() {
   const reduce = useReducedMotion();
 
   return (
-    <section id="find-us" className="px-6 py-24 lg:px-16" style={{ background: "var(--t3-black)" }}>
-      <div className="mx-auto max-w-6xl">
+    <section id="find-us" className="relative overflow-hidden px-6 py-24 lg:px-16">
+      <div className="absolute inset-0" aria-hidden>
+        <Image
+          src="/images/thirty3/customer-laptop-community.png"
+          alt="A customer working and enjoying coffee at thirty3coffee, with the community gathered in the background"
+          fill
+          className="t3-duotone object-cover opacity-25"
+          sizes="100vw"
+        />
+        <div
+          className="absolute inset-0"
+          style={{ background: "linear-gradient(180deg, var(--t3-black) 0%, rgba(13,13,13,0.85) 100%)" }}
+        />
+      </div>
+      <div className="relative z-10 mx-auto max-w-6xl">
         <p className="mb-4 text-[11px] font-medium uppercase tracking-[0.3em] text-t3-gold font-t3-heading">
           WHERE TO FIND US
         </p>

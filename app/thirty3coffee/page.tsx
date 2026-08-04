@@ -2,6 +2,7 @@ import { Hero } from "@/components/thirty3/Hero";
 import { TrustStrip } from "@/components/thirty3/TrustStrip";
 import { OpeningHours } from "@/components/thirty3/OpeningHours";
 import { WhatWeServe } from "@/components/thirty3/WhatWeServe";
+import { CinematicBreak } from "@/components/thirty3/CinematicBreak";
 import { Menu } from "@/components/thirty3/Menu";
 import { FindUs } from "@/components/thirty3/FindUs";
 import { EmailSignup } from "@/components/thirty3/EmailSignup";
@@ -46,6 +47,7 @@ export default function Thirty3CoffeePage() {
       <TrustStrip />
       <OpeningHours />
       <WhatWeServe />
+      <CinematicBreak />
       <Menu />
       <FindUs />
       <EmailSignup />
